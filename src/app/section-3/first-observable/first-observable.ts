@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-first-observable',
@@ -10,7 +11,11 @@ import { ButtonModule } from 'primeng/button';
 export default class FirstObservable {
 
   constructor() {
-    console.log('first observable');
+    const obs$ = new Observable((subscriber) => {
+      subscriber.next('Hello');
+    });
+
+    const subscription$ = obs$.subscribe(value => console.log(value));
   }
 
 }
