@@ -18,6 +18,10 @@ export const routes: Routes = [
     loadComponent: () => import('./section-3/subscription-and-unsubscribe/subscription-and-unsubscribe').then(c => c)
   },
   {
+    path: 'chain-observable',
+    loadComponent: () => import('./section-3/chain-observable/chain-observable').then(c => c)
+  },
+  {
     path: '**',
     redirectTo: ''
   }
