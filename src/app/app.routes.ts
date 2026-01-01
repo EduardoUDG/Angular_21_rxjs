@@ -21,9 +21,13 @@ export const routes: Routes = [
     path: 'chain-observable',
     loadComponent: () => import('./section-3/chain-observable/chain-observable').then(c => c)
   },
-    {
+  {
     path: 'subject-part1',
     loadComponent: () => import('./section-3/subject-part1/subject-part1').then(c => c)
+  },
+  {
+    path: 'subject-part2',
+    loadComponent: () => import('./section-3/subject-part2/subject-part2').then(c => c)
   },
   {
     path: '**',
