@@ -1,0 +1,36 @@
+<p>fromEvent()</p>
+<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events#event_index" class="underline">Lista de eventos</a>
+
+<hr>
+<h2 class="text-lg font-bold">Parametros:</h2>
+<br>
+
+<p>
+  <b>1. target (requerido)</b>
+  El elemento DOM, EventEmitter, objeto jQuery u otro objeto que soporte la adición/eliminación de event listeners. Puede ser:
+  <br>
+  Elementos DOM: <b>document</b>, <b>window</b>, un elemento HTML específico
+  Node.js EventEmitter
+  Objetos jQuery
+  Cualquier objeto con métodos addEventListener/removeEventListener o on/off
+</p>
+
+<br>
+<p>
+  <b>2. eventName (requerido)</b>
+  <br>
+  El nombre del evento como string: <b>'click'</b>, <b>'mousemove'</b>, <b>'keyup'</b>, etc.
+</p>
+
+<br>
+<div>
+  <b>3. options (opcional)</b>
+  Un objeto con opciones para el event listener. Las opciones comunes incluyen:
+  <br>
+  <ul>
+    <li><b>capture:</b> Boolean para usar capture phase</li>
+    <li><b>passive:</b> Boolean para indicar que el listener nunca llamará a preventDefault()</li>
+    <li><b>once:</b> Boolean para que el listener se ejecute solo una vez</li>
+  </ul>
+</div>

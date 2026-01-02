@@ -34,6 +34,10 @@ export const routes: Routes = [
     loadComponent: () => import('./section-4/of/of').then(c => c)
   },
   {
+    path: 'from-event',
+    loadComponent: () => import('./section-4/from-event/from-event').then(c => c)
+  },
+  {
     path: '**',
     redirectTo: ''
   }

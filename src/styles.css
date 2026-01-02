@@ -2,3 +2,29 @@
 
 @import "tailwindcss";
 @import "tailwindcss-primeui";
+
+/* Estilos para listas no ordenadas */
+ul {
+  @apply list-disc list-inside space-y-2 text-gray-700 ml-4;
+}
+
+/* Estilos para listas ordenadas */
+ol {
+  @apply list-decimal list-inside space-y-2 text-gray-700 ml-4;
+}
+
+/* Estilos para los items de lista */
+li {
+  @apply text-gray-700 leading-relaxed;
+}
+
+/* Listas anidadas */
+ul ul,
+ol ul {
+  @apply mt-2 ml-6 space-y-1;
+}
+
+ul ol,
+ol ol {
+  @apply mt-2 ml-6 space-y-1;
+}
