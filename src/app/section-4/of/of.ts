@@ -1,11 +1,10 @@
-import { AsyncPipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { AppObserver } from '@constants';
 import { of } from 'rxjs';
 
 @Component({
   selector: 'app-of',
-  imports: [AsyncPipe],
+  imports: [],
   templateUrl: './of.html',
   styleUrl: './of.css',
 })

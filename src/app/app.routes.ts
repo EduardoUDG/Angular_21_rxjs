@@ -37,9 +37,13 @@ export const routes: Routes = [
     path: 'from-event',
     loadComponent: () => import('./section-4/from-event/from-event').then(c => c)
   },
-    {
+  {
     path: 'range',
     loadComponent: () => import('./section-4/range/range').then(c => c)
+  },
+  {
+    path: 'interval-timer',
+    loadComponent: () => import('./section-4/interval-timer/interval-timer').then(c => c)
   },
   {
     path: '**',
