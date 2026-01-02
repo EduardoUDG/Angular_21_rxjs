@@ -50,6 +50,10 @@ export const routes: Routes = [
     loadComponent: () => import('./section-4/observable-on/observable-on').then(c => c)
   },
   {
+    path: 'async-cheduler',
+    loadComponent: () => import('./section-4/async-cheduler/async-cheduler').then(c => c)
+  },
+  {
     path: '**',
     redirectTo: ''
   }

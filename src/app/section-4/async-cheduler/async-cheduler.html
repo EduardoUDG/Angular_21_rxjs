@@ -1,0 +1,46 @@
+<h2 class="text-lg font-bold">asyncCheduler</h2>
+<hr>
+<p>
+  Este <b>asyncScheduler</b> NO crea un <b>Observable</b> si no una <b>Subscription</b>
+</p>
+<ul>
+  <li><b>Subscription</b>: recordemos que un <b>Subscription</b> no es mas que el producto de cuando ejecutamos un
+    <b>subscribe()</b> de un <b>Observable</b></li>
+</ul>
+
+<br><br>
+
+<p>
+  <b>asyncScheduler</b>:
+  Nos permite trabajar de forma similar a cuando trabajamos con:
+</p>
+<pre>
+  <code>
+    {{ 'setTimeout(() => {}, 3000);' }}
+    {{ 'setInterval(() => {}, 3000);' }}
+  </code>
+</pre>
+<br><br>
+
+<p>Para empezar a trabajar con asyncScheduler necesitamos mandar 2 argumentos:</p>
+<ul>
+  <li><b>1 Funcion</b>: El primer argumento es la funcion que ejecutara nuestro <b>schedule</b></li>
+  <li><b>2 Tiempo/Delay</b>: El tiempo/delay que queremos que tome para que se empiece a ejecutar</li>
+  <li>
+    <b>3 Estado</b>: en esta parte solo podemos mandar 1 <b>argumento</b>, por lo cual si necesitamos de mas info, tenemos que pasar un <b>Objeto</b>
+    <pre>
+      <code>
+        {{ stringCode }}
+      </code>
+    </pre>
+  </li>
+</ul>
+
+<p>Tambien esta esta forma interesante de usarlo con una <b>function</b> en lugar de una <b>arrow function</b></p>
+<pre>
+  <code>
+    {{ stringCodeFunction }}
+  </code>
+</pre>
+
+<br><br><br><br><br>
