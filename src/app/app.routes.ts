@@ -30,6 +30,10 @@ export const routes: Routes = [
     loadComponent: () => import('./section-3/subject-part2/subject-part2').then(c => c)
   },
   {
+    path: 'of',
+    loadComponent: () => import('./section-4/of/of').then(c => c)
+  },
+  {
     path: '**',
     redirectTo: ''
   }
