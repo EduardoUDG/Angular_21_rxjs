@@ -14,13 +14,31 @@ export default class IntervalTimer {
       complete: () => console.log('complete')
     }
 
-    console.log('start');
-    const interval$ = interval(2000);
-    interval$.subscribe(observer);
+    // console.log('start');
+    // const interval$ = interval(2000);
+    // interval$.subscribe(observer);
 
     // const timer$ = timer(1000);
     // timer$.subscribe(observer);
 
-    console.log('end');
+    // console.log('end');
+
+    this.specialTimerConfiguration();
+  }
+
+  specialTimerConfiguration(): void {
+    const observer = {
+      next: (value:any) => console.log(value),
+      complete: () => console.log('complete')
+    }
+
+    // const timer$ = timer(1000);
+    // const timer$ = timer(1000, 1000);
+
+    const todayIn5 = new Date();
+    todayIn5.setSeconds(todayIn5.getSeconds() + 5);
+
+    const timer$ = timer(todayIn5);
+    timer$.subscribe(observer);
   }
 }

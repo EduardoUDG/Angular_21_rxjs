@@ -46,6 +46,10 @@ export const routes: Routes = [
     loadComponent: () => import('./section-4/interval-timer/interval-timer').then(c => c)
   },
   {
+    path: 'observable-on',
+    loadComponent: () => import('./section-4/observable-on/observable-on').then(c => c)
+  },
+  {
     path: '**',
     redirectTo: ''
   }

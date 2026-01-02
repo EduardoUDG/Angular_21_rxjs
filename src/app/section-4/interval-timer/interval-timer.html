@@ -1,3 +1,22 @@
 <p class="text-lg font-bold">interval() timer()</p>
 <hr>
 <p>Estos 2 observables son <b>ASYNCHRONOUS</b> por naturaleza</p>
+<br>
+<p><b>timer()</b> el timer, si le pasamos:</p>
+<ul>
+  <li>
+    1 argumento, solo es el tiempo en milisegundos que transcurrira/inicie para que termine y ejecute el <b>complete</b>
+    <ul>
+      <li>
+        Tambien podemos pasarle una <b>Fecha</b> y nos sirve como una notificacion programada:
+        <pre>
+          <code>
+                const todayIn5 = new Date();
+                todayIn5.setSeconds(todayIn5.getSeconds() + 5);
+          </code>
+        </pre>
+      </li>
+    </ul>
+  </li>
+  <li>2 argumento, la frecuencia de tiempo en milisegundo con el que emita valores (como un <b>interval</b>)</li>
+</ul>
