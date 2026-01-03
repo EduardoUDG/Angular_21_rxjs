@@ -54,6 +54,10 @@ export const routes: Routes = [
     loadComponent: () => import('./section-4/async-cheduler/async-cheduler').then(c => c)
   },
   {
+    path: 'from',
+    loadComponent: () => import('./section-4/from/from').then(c => c)
+  },
+  {
     path: '**',
     redirectTo: ''
   }
