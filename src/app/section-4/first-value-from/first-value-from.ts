@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { firstValueFrom, Observable } from 'rxjs';
+import { firstValueFrom, of } from 'rxjs';
 
 @Component({
   selector: 'app-first-value-from',
@@ -10,20 +10,17 @@ import { firstValueFrom, Observable } from 'rxjs';
 export default class FirstValueFrom {
   constructor() {
 
-    const obs$ = new Observable((subscriber) => {
-      subscriber.next('Hello world');
-    });
-
-    firstValueFrom(obs$).then(res => console.log({ res }));
+    const interval$ = of(1,2,3);
+    firstValueFrom(interval$).then(res => console.log({ res }));
   }
 
   get codeExample(): string {
     return `
-    const obs$ = new Observable((subscriber) => {
-      subscriber.next('Hello world');
-    });
+    const interval$ = of(1,2,3);
 
-    firstValueFrom(obs$).then(res => console.log({ res }));
+    firstValueFrom(interval$).then(res => console.log({ res }));
+
+    // result: 1
     `;
   }
 }
