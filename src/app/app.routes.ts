@@ -58,6 +58,10 @@ export const routes: Routes = [
     loadComponent: () => import('./section-4/from/from').then(c => c)
   },
   {
+    path: 'first-value-from',
+    loadComponent: () => import('./section-4/first-value-from/first-value-from').then(c => c)
+  },
+  {
     path: '**',
     redirectTo: ''
   }
