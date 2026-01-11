@@ -66,6 +66,10 @@ export const routes: Routes = [
     loadComponent: () => import('./section-4/last-value-from/last-value-from').then(c => c)
   },
   {
+    path: 'progress-bar-lab',
+    loadComponent: () => import('./section-5/progress-bar-lab/progress-bar-lab').then(c => c)
+  },
+  {
     path: '**',
     redirectTo: ''
   }
