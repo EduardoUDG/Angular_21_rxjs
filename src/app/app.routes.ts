@@ -78,6 +78,10 @@ export const routes: Routes = [
     loadComponent: () => import('./section-6/scan/scan').then(c => c)
   },
   {
+    path: 'take-while',
+    loadComponent: () => import('./section-6/take-while/take-while').then(c => c)
+  },
+  {
     path: '**',
     redirectTo: ''
   }
