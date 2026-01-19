@@ -70,6 +70,10 @@ export const routes: Routes = [
     loadComponent: () => import('./section-5/progress-bar-lab/progress-bar-lab').then(c => c)
   },
   {
+    path: 'take',
+    loadComponent: () => import('./section-6/take/take').then(c => c)
+  },
+  {
     path: '**',
     redirectTo: ''
   }
