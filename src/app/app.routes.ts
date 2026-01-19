@@ -74,6 +74,10 @@ export const routes: Routes = [
     loadComponent: () => import('./section-6/take/take').then(c => c)
   },
   {
+    path: 'scan',
+    loadComponent: () => import('./section-6/scan/scan').then(c => c)
+  },
+  {
     path: '**',
     redirectTo: ''
   }
