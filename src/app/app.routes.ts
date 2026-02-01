@@ -86,6 +86,10 @@ export const routes: Routes = [
     loadComponent: () => import('./section-7/sample/sample').then(c => c)
   },
   {
+    path: 'merge-all',
+    loadComponent: () => import('./section-9/merge-all/merge-all').then(c => c)
+  },
+  {
     path: '**',
     redirectTo: ''
   }
